@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Users\Valentin\Desktop\Testing BMP\Testing BMP\Source.cpp(14,1): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+C:\Users\Valentin\Desktop\Testing BMP\Testing BMP\Source.cpp(54,77): warning C4244: =: преобразование "double" в "DWORD", возможна потеря данных
+  Testing BMP.vcxproj -> C:\Users\Valentin\Desktop\Testing BMP\x64\Debug\Testing BMP.exe

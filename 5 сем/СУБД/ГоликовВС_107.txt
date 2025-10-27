@@ -1,0 +1,40 @@
+Голиков В.С.							11.10.25
+гр. 5130904/30{107}
+
+3. Найти все такие тройки значений "номер поставщика-номер детали—номер проекта", для
+которых указанные поставщик, деталь и проект не находятся в одном городе.
+
+-- В данном задании я использовал связки AND вместо OR, так как требуется найти такие тройки,
+-- в которых И поставщик И деталь И проект находятся в разных городах. 
+-- (Если использовать OR, то все тройки, в которых хотя бы один город отличается, не будут выведены)
+
+РА: 
+(((S RENAME City AS SCity) TIMES
+(P RENAME City AS PCity) TIMES
+(J RENAME City AS JCity))
+WHERE	SCity<>PCity AND
+	PCity<>JCity AND
+   	JCity<>SCity) {S#, P#, J#}
+
+РИ: {
+(SX.S#, PX.P#,JX.J#) WHERE 
+	SX.CITY<>PX.CITY AND
+	PX.CITY<>JX.CITY AND
+	SX.CITY<>JX.CITY
+}
+
+SQL:
+SELECT S.S#, P.P#, J.J# FROM S, P, J WHERE
+	S.CITY<>P.CITY AND
+	P.CITY<>J.CITY AND
+	J.CITY<>S.CITY;
+
+Ответ-таблица:
+|	SN	|	PN	|	JN	|
+|	S1	|	P2	|	J2	|
+|	S1	|	P2	|	J3	|
+|	..	|	..	|	..	|
+|	S5	|	P6	|	J2	|
+|	S5	|	P6	|	J6	|
+
+	

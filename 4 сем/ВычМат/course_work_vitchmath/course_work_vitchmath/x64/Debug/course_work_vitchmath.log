@@ -1,0 +1,17 @@
+﻿  main.cpp
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\cmathsrc\cmath.h(132,61): warning C4091: typedef : пропускается слева от "polynomial", когда ни одна переменная не объявлена
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\cmathsrc\cmath.h(140,47): warning C4091: typedef : пропускается слева от "COMPLEX", когда ни одна переменная не объявлена
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\cmathsrc\cmath.h(151,42): warning C4091: typedef : пропускается слева от "BSPLSTRC", когда ни одна переменная не объявлена
+  (компиляция исходного файла "main.cpp")
+  
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\main.cpp(17,1): warning C4005: EPSILON: изменение макроопределения
+  C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\cmathsrc\cmath.h(112,1):
+  см. предыдущее определение "EPSILON"
+  
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\main.cpp(473,27): warning C4101: stepCount: неиспользованная локальная переменная
+C:\Users\Valentin\Desktop\course_work_vitchmath\course_work_vitchmath\main.cpp(518,13): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+  course_work_vitchmath.vcxproj -> C:\Users\Valentin\Desktop\course_work_vitchmath\x64\Debug\course_work_vitchmath.exe

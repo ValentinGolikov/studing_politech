@@ -1,0 +1,4 @@
+﻿  Source.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.38.33130\include\format(42): warning STL4038: The contents of <format> are available only with C++20 or later.
+C:\Users\Valentin\Desktop\lab1\lab1\Source.cpp(14,35): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  lab1.vcxproj -> C:\Users\Valentin\Desktop\lab1\x64\Debug\lab1.exe

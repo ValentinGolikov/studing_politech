@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Valentin\\source\\repos\\lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8F44C372-4DB2-430A-B8D4-71753CC0BB46}|lab1\\lab1.vcxproj|C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{8F44C372-4DB2-430A-B8D4-71753CC0BB46}|lab1\\lab1.vcxproj|solutionrelative:lab1\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\spline.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1\\cmathsrc\\spline.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\cmath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:lab1\\cmathsrc\\cmath.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "spline.c",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\spline.c",
+              "RelativeDocumentMoniker": "lab1\\cmathsrc\\spline.c",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\spline.c",
+              "RelativeToolTip": "lab1\\cmathsrc\\spline.c",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAAAEBAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
+              "WhenOpened": "2025-02-13T16:06:48.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "cmath.h",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\cmath.h",
+              "RelativeDocumentMoniker": "lab1\\cmathsrc\\cmath.h",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\cmathsrc\\cmath.h",
+              "RelativeToolTip": "lab1\\cmathsrc\\cmath.h",
+              "ViewState": "AgIAAKQBAAAAAAAAAAAuwLMBAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-13T13:58:15.193Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\Source.cpp",
+              "RelativeDocumentMoniker": "lab1\\Source.cpp",
+              "ToolTip": "C:\\Users\\Valentin\\source\\repos\\lab1\\lab1\\Source.cpp",
+              "RelativeToolTip": "lab1\\Source.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-13T13:16:21.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

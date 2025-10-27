@@ -1,0 +1,4 @@
+﻿  asm.cpp
+C:\Users\Valentin\Desktop\asm\asm\asm.cpp(7,26): warning C4091: : пропускается слева от "std::chrono::duration<__int64,std::milli>", когда ни одна переменная не объявлена
+C:\Users\Valentin\Desktop\asm\asm\asm.cpp(25,28): warning C4244: инициализация: преобразование "double" в "__int64", возможна потеря данных
+  asm.vcxproj -> C:\Users\Valentin\Desktop\asm\Debug\asm.exe

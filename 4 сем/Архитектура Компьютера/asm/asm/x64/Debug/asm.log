@@ -1,0 +1,67 @@
+﻿  Source.cpp
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(10,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(12,2): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(12,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(12,6): error C2065: eax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(12,16): error C2760: синтаксическая ошибка: непредвиденный элемент "+". Ожидается ","
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(12,19): error C2059: синтаксическая ошибка: ]
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(26,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(28,2): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(28,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(28,6): error C2065: eax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(29,2): error C2760: синтаксическая ошибка: непредвиденный элемент "mov". Ожидается "{"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(29,6): error C2065: ecx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(30,2): error C2760: синтаксическая ошибка: непредвиденный элемент "add". Ожидается "{"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(30,6): error C2065: eax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(30,11): error C2065: ecx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(31,2): error C2146: синтаксическая ошибка: отсутствие "," перед идентификатором "mov"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(46,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(48,2): error C2065: lea: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(48,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(48,6): error C2065: ebx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(49,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(49,2): error C2065: lea: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(49,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(49,6): error C2065: edx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(50,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(50,2): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(50,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esi"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(50,6): error C2065: esi: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(51,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(51,2): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(51,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "eax"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(51,6): error C2065: eax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(52,2): error C2760: синтаксическая ошибка: непредвиденный элемент "mov". Ожидается "{"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(52,6): error C2065: ecx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(53,2): error C2760: синтаксическая ошибка: непредвиденный элемент "add". Ожидается "{"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(53,6): error C2065: eax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(53,11): error C2065: ecx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(54,2): error C2146: синтаксическая ошибка: отсутствие "," перед идентификатором "mov"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(76,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(78,2): error C2065: lea: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(78,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "ebx"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(78,6): error C2065: ebx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(79,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(79,2): error C2065: lea: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(79,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "edx"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(79,6): error C2065: edx: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(80,2): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "lea"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(80,2): error C2065: lea: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(80,6): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "esi"
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(80,6): error C2065: esi: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\Source.cpp(81,3): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+  source_64.cpp
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(4,3): error C4235: использовано нестандартное расширение: ключевое слово "__asm" данной архитектурой не поддерживается
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(5,5): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(5,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "rax"
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(5,9): error C2065: rax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(6,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "add"
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(6,5): error C2065: add: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(6,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "rax"
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(6,9): error C2065: rax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(7,5): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "mov"
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(7,5): error C2065: mov: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(7,9): error C2146: синтаксическая ошибка: отсутствие ";" перед идентификатором "sum"
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(7,14): error C2065: rax: необъявленный идентификатор
+C:\Users\Valentin\Desktop\asm\asm\source_64.cpp(8,3): error C2143: синтаксическая ошибка: отсутствие ";" перед "}"
+  Создание кода...

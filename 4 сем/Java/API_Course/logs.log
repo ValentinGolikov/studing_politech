@@ -1,0 +1,791 @@
+июн. 10, 2025 5:43:44 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 5:43:44 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 5:43:44 PM org.example.ThreadManager lambda$startPolling$2
+WARNING: Error: Unknown service: weathr
+
+июн. 10, 2025 5:43:46 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:46 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 5:43:46 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 5:43:46 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 5:43:46 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:46 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:43:46 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 18
+июн. 10, 2025 5:43:46 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 5:43:46 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:46 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:43:46 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 35
+июн. 10, 2025 5:43:46 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 5:43:49 PM org.example.ThreadManager lambda$startPolling$2
+WARNING: Error: Unknown service: weathr
+
+июн. 10, 2025 5:43:49 PM org.example.ThreadManager lambda$startPolling$2
+WARNING: Error: Unknown service: weathr
+
+июн. 10, 2025 5:43:49 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:49 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 5:43:49 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 36
+июн. 10, 2025 5:43:49 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 5:43:49 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:49 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 5:43:49 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 37
+июн. 10, 2025 5:43:49 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 5:43:49 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:49 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:43:49 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 54
+июн. 10, 2025 5:43:49 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 5:43:52 PM org.example.ThreadManager lambda$startPolling$2
+WARNING: Error: Unknown service: weathr
+
+июн. 10, 2025 5:43:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:52 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 5:43:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 55
+июн. 10, 2025 5:43:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 5:43:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:52 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:43:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 72
+июн. 10, 2025 5:43:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 5:43:53 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:43:53 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:43:53 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 89
+июн. 10, 2025 5:43:53 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 5:44:19 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 5:44:19 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 5:44:21 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:44:21 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 5:44:21 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 5:44:21 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 5:44:21 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:44:21 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 5:44:21 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 5:44:21 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 5:44:21 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 5:44:21 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 5:44:21 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 19
+июн. 10, 2025 5:44:21 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 6:40:33 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 6:40:34 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 6:40:34 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:40:34 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:40:34 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:40:35 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:40:35 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:40:36 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:40:36 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 6:40:36 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 6:40:36 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 6:40:36 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:40:36 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 6:40:36 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 6:40:36 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 6:40:36 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:40:36 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:40:36 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 6:40:36 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 6:40:36 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 6:51:50 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 6:51:50 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 6:51:51 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:51:51 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:51:51 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:51:52 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:51:52 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:51:52 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:51:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:51:52 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 6:51:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 6:51:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 6:51:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:51:52 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 6:51:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 6:51:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 6:51:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:51:52 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 6:51:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 6:51:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 6:54:08 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 6:54:08 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 1 threads
+
+июн. 10, 2025 6:54:09 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:10 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:10 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:10 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 6:54:10 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 19
+июн. 10, 2025 6:54:10 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 6:54:13 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:14 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:14 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:14 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 6:54:14 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 20
+июн. 10, 2025 6:54:14 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 6:54:17 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:17 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:17 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:17 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 6:54:17 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 6:54:17 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 6:54:50 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 6:54:50 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 6:54:51 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:51 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:51 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 6:54:52 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:52 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:52 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 6:54:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:52 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 6:54:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 6:54:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 6:54:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:52 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 6:54:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 6:54:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 6:54:52 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 6:54:52 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 6:54:52 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 6:54:52 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 7:01:31 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 7:01:31 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 7:01:32 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:01:32 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:01:32 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:01:32 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:01:32 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:01:32 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 7:01:32 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 7:01:32 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 1 total records
+июн. 10, 2025 7:01:32 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 7:01:32 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 7:01:32 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 7:01:32 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 2 total records
+июн. 10, 2025 7:01:32 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 7:01:33 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:01:33 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 7:01:33 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 7:01:33 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 21 total records
+июн. 10, 2025 7:01:33 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 7:01:35 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:01:35 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:01:35 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:01:35 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 7:01:35 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 7:01:35 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 22 total records
+июн. 10, 2025 7:01:35 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 7:18:40 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 7:18:40 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 7:18:40 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:40 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:40 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:40 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:40 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:40 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:40 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 7:18:40 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 7:18:40 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 7:18:40 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:40 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 7:18:40 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 7:18:40 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 7:18:40 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:40 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:40 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 7:18:40 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 7:18:40 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 7:18:43 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:43 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:43 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:44 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:44 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:44 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 7:18:44 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 22
+июн. 10, 2025 7:18:44 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 7:18:44 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:44 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:44 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 7:18:44 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 23
+июн. 10, 2025 7:18:44 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 7:18:44 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:44 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:44 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 7:18:44 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 42
+июн. 10, 2025 7:18:44 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 7:18:47 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:47 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:47 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 7:18:47 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:47 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:47 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:47 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 7:18:47 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 43
+июн. 10, 2025 7:18:47 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 7:18:47 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:47 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 7:18:47 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 62
+июн. 10, 2025 7:18:47 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 7:18:47 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 7:18:47 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 7:18:47 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 7:18:47 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 63
+июн. 10, 2025 7:18:47 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 8:04:40 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 8:04:40 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 8:04:41 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:41 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:41 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:46 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 8:04:46 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 8:04:47 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:47 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:47 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:04:48 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:04:48 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:04:48 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:04:48 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 8:04:48 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 8:04:48 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+июн. 10, 2025 8:04:48 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 8:04:48 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 8:04:48 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 8:04:48 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+июн. 10, 2025 8:04:48 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+июн. 10, 2025 8:04:48 PM org.example.DataWriter write
+INFO: Processing data for output.json
+июн. 10, 2025 8:04:48 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 8:04:48 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+июн. 10, 2025 8:04:48 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 8:05:06 PM org.example.Main main
+INFO: Starting the program
+июн. 10, 2025 8:05:06 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+июн. 10, 2025 8:05:07 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:05:07 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:05:07 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+июн. 10, 2025 8:05:08 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:05:08 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:05:08 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+июн. 10, 2025 8:05:08 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 8:05:08 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+июн. 10, 2025 8:05:08 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 1 total records
+июн. 10, 2025 8:05:08 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+июн. 10, 2025 8:05:08 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 8:05:08 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+июн. 10, 2025 8:05:08 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 20 total records
+июн. 10, 2025 8:05:08 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+июн. 10, 2025 8:05:08 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+июн. 10, 2025 8:05:08 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+июн. 10, 2025 8:05:08 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 21 total records
+июн. 10, 2025 8:05:08 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:00:53 PM org.example.Main main
+INFO: Starting the program
+окт. 16, 2025 1:00:54 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+окт. 16, 2025 1:00:54 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:54 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:54 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:55 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:55 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:55 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:55 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:55 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+окт. 16, 2025 1:00:55 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 1 total records
+окт. 16, 2025 1:00:55 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+окт. 16, 2025 1:00:55 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:55 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+окт. 16, 2025 1:00:55 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 2 total records
+окт. 16, 2025 1:00:55 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:00:55 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:55 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+окт. 16, 2025 1:00:55 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 20 total records
+окт. 16, 2025 1:00:55 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+окт. 16, 2025 1:00:58 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:58 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:58 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:00:58 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:58 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:58 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+окт. 16, 2025 1:00:58 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 21 total records
+окт. 16, 2025 1:00:58 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:00:58 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:58 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:58 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+окт. 16, 2025 1:00:58 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 22 total records
+окт. 16, 2025 1:00:58 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+окт. 16, 2025 1:00:59 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:00:59 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:00:59 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+окт. 16, 2025 1:00:59 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 40 total records
+окт. 16, 2025 1:00:59 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+окт. 16, 2025 1:01:01 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:01 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:02 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:02 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:02 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:01:02 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+окт. 16, 2025 1:01:02 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 41 total records
+окт. 16, 2025 1:01:02 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+окт. 16, 2025 1:01:02 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:02 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:01:02 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+окт. 16, 2025 1:01:02 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 59 total records
+окт. 16, 2025 1:01:02 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+окт. 16, 2025 1:01:02 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:02 PM org.example.DataWriter write
+INFO: Processing data for output.csv
+окт. 16, 2025 1:01:02 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+окт. 16, 2025 1:01:02 PM org.example.DataWriter writeCsv
+INFO: CSV updated successfully with 60 total records
+окт. 16, 2025 1:01:02 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:01:33 PM org.example.Main main
+INFO: Starting the program
+окт. 16, 2025 1:01:33 PM org.example.ThreadManager startPolling
+INFO: Starting polling for 3 services with 3 threads
+
+окт. 16, 2025 1:01:33 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:33 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:33 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:34 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:34 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:34 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:34 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:34 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+окт. 16, 2025 1:01:34 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 1
+окт. 16, 2025 1:01:34 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+окт. 16, 2025 1:01:34 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:34 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+окт. 16, 2025 1:01:34 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 2
+окт. 16, 2025 1:01:34 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:01:34 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:34 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+окт. 16, 2025 1:01:34 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 20
+окт. 16, 2025 1:01:34 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
+окт. 16, 2025 1:01:37 PM org.example.WeatherApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:37 PM org.example.NewsApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:37 PM org.example.CryptoApiFetcher fetchData
+INFO: HTTP-Get request created
+окт. 16, 2025 1:01:38 PM org.example.CryptoApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:38 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:38 PM org.example.DataWriter findDataNode
+INFO: Root node is an array
+окт. 16, 2025 1:01:38 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 21
+окт. 16, 2025 1:01:38 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from crypto
+
+окт. 16, 2025 1:01:38 PM org.example.WeatherApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:38 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:38 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: data
+окт. 16, 2025 1:01:38 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 22
+окт. 16, 2025 1:01:38 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from weather
+
+окт. 16, 2025 1:01:38 PM org.example.NewsApiFetcher fetchData
+INFO: Good HTTP Response: Status code 200
+окт. 16, 2025 1:01:38 PM org.example.DataWriter write
+INFO: Processing data for output.json
+окт. 16, 2025 1:01:38 PM org.example.DataWriter findFirstArrayNode
+INFO: Found data array in field: articles
+окт. 16, 2025 1:01:38 PM org.example.DataWriter writeJson
+INFO: JSON data appended successfully. Total items: 40
+окт. 16, 2025 1:01:38 PM org.example.ThreadManager lambda$startPolling$2
+INFO: Successfully fetched data from news
+
