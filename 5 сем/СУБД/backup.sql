@@ -2,15 +2,14 @@
 -- PostgreSQL database dump
 --
 
-\restrict GaBNl4d3OIWtWr04sP7DdZrarIMWnvT2BIAzAaH9TGeQ5PBFC9x1fwc54TVbV6a
+\restrict YFNEqIvjrruxdMTjFJQTzaGboeXhjJlfcKqy3Mggy7yPdc7Pls4vxFqQgNzeLcG
 
--- Dumped from database version 17.6
--- Dumped by pg_dump version 17.6
+-- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
+-- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
-SET transaction_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
@@ -283,14 +282,14 @@ ALTER TABLE public.auto_personal ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTIT
 --
 
 CREATE VIEW public.drivers AS
- SELECT id,
-    first_name,
-    last_name,
-    father_name
+ SELECT auto_personal.id,
+    auto_personal.first_name,
+    auto_personal.last_name,
+    auto_personal.father_name
    FROM public.auto_personal;
 
 
-ALTER VIEW public.drivers OWNER TO postgres;
+ALTER TABLE public.drivers OWNER TO postgres;
 
 --
 -- Name: journal; Type: TABLE; Schema: public; Owner: postgres
@@ -326,14 +325,14 @@ ALTER TABLE public.journal ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 --
 
 CREATE VIEW public.my_view AS
- SELECT id,
-    first_name,
-    last_name,
-    father_name
+ SELECT auto_personal.id,
+    auto_personal.first_name,
+    auto_personal.last_name,
+    auto_personal.father_name
    FROM public.auto_personal;
 
 
-ALTER VIEW public.my_view OWNER TO postgres;
+ALTER TABLE public.my_view OWNER TO postgres;
 
 --
 -- Name: routes; Type: TABLE; Schema: public; Owner: postgres
@@ -360,7 +359,7 @@ CREATE VIEW public.on_route AS
   GROUP BY routes.id, routes.name;
 
 
-ALTER VIEW public.on_route OWNER TO postgres;
+ALTER TABLE public.on_route OWNER TO postgres;
 
 --
 -- Name: routes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -388,7 +387,7 @@ CREATE VIEW public.routes_info AS
   GROUP BY routes.name;
 
 
-ALTER VIEW public.routes_info OWNER TO postgres;
+ALTER TABLE public.routes_info OWNER TO postgres;
 
 --
 -- Data for Name: auto; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -396,10 +395,10 @@ ALTER VIEW public.routes_info OWNER TO postgres;
 
 COPY public.auto (id, num, color, mark, personal_id) FROM stdin;
 4	р789уд_98	серая	Volkswagen	4
-1	А749ПБ_178	желтая	fiat	5
 2	А777УФ_42	красная	ВАЗ2107	5
 5	м912рв_78	зеленая	Opel	2
 3	р538нв_98	зеленая	BMW	3
+1	А749ПБ_178	желтая	fiat	5
 \.
 
 
@@ -550,5 +549,5 @@ ALTER TABLE ONLY public.journal
 -- PostgreSQL database dump complete
 --
 
-\unrestrict GaBNl4d3OIWtWr04sP7DdZrarIMWnvT2BIAzAaH9TGeQ5PBFC9x1fwc54TVbV6a
+\unrestrict YFNEqIvjrruxdMTjFJQTzaGboeXhjJlfcKqy3Mggy7yPdc7Pls4vxFqQgNzeLcG
 
