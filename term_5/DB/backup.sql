@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict YFNEqIvjrruxdMTjFJQTzaGboeXhjJlfcKqy3Mggy7yPdc7Pls4vxFqQgNzeLcG
+\restrict CqxgDp7wecIN2IOmOsZg3ryWw0tOxS3ThJdxvOPU4MmZGkxCOeQJoB2YRkQRkGm
 
 -- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
 -- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
@@ -17,6 +17,105 @@ SET check_function_bodies = false;
 SET xmloption = content;
 SET client_min_messages = warning;
 SET row_security = off;
+
+--
+-- Name: calculate_bonuses(date, date, numeric); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.calculate_bonuses(start_date date, end_date date, total_bonus_amount numeric) RETURNS TABLE(driver_id integer, driver_name text, record_routes_count integer, bonus_amount numeric)
+    LANGUAGE plpgsql
+    AS $$DECLARE
+    driver_rec RECORD;
+    top1_id INTEGER := NULL;
+    top2_id INTEGER := NULL;
+    top3_id INTEGER := NULL;
+    top1_count INTEGER := 0;
+    top2_count INTEGER := 0;
+    top3_count INTEGER := 0;
+    current_count INTEGER;
+BEGIN
+    FOR driver_rec IN (
+        SELECT 
+            ap.id as driver_id,
+            ap.first_name || ' ' || ap.last_name || ' ' || ap.father_name as driver_name,
+            COUNT(DISTINCT r.id) as record_routes_count
+        FROM auto_personal ap
+        JOIN auto a ON ap.id = a.personal_id
+        JOIN journal j ON a.id = j.auto_id
+        JOIN routes r ON j.route_id = r.id
+        WHERE j.time_out BETWEEN start_date AND end_date
+          AND j.time_in IS NOT NULL
+          AND j.time_in > j.time_out
+		  --проверка на рекорд
+          AND (j.auto_id, j.route_id, (j.time_in - j.time_out)) IN (
+              SELECT j2.auto_id, j2.route_id, MIN(j2.time_in - j2.time_out)
+              FROM journal j2
+              WHERE j2.time_out BETWEEN start_date AND end_date
+                AND j2.time_in IS NOT NULL
+                AND j2.time_in > j2.time_out
+                AND j2.route_id = j.route_id
+              GROUP BY j2.route_id, j2.auto_id
+          )
+        GROUP BY ap.id, ap.first_name, ap.last_name, ap.father_name
+        ORDER BY record_routes_count DESC
+    )
+    LOOP
+        current_count := driver_rec.record_routes_count;
+        
+        IF current_count > top1_count THEN
+            top3_id := top2_id;
+            top3_count := top2_count;
+            top2_id := top1_id;
+            top2_count := top1_count;
+            top1_id := driver_rec.driver_id;
+            top1_count := current_count;
+        ELSIF current_count > top2_count THEN
+            top3_id := top2_id;
+            top3_count := top2_count;
+            top2_id := driver_rec.driver_id;
+            top2_count := current_count;
+        ELSIF current_count > top3_count THEN
+            top3_id := driver_rec.driver_id;
+            top3_count := current_count;
+        END IF;
+    END LOOP;
+
+    IF top1_id IS NOT NULL THEN
+        driver_id := top1_id;
+        SELECT first_name || ' ' || last_name || ' ' || father_name 
+        INTO driver_name 
+        FROM auto_personal 
+        WHERE id = top1_id;
+        record_routes_count := top1_count;
+        bonus_amount := total_bonus_amount * 0.5;
+        RETURN NEXT;
+    END IF;
+
+    IF top2_id IS NOT NULL THEN
+        driver_id := top2_id;
+        SELECT first_name || ' ' || last_name || ' ' || father_name 
+        INTO driver_name 
+        FROM auto_personal
+        WHERE id = top2_id;
+        record_routes_count := top2_count;
+        bonus_amount := total_bonus_amount * 0.3;
+        RETURN NEXT;
+    END IF;
+
+    IF top3_id IS NOT NULL THEN
+        driver_id := top3_id;
+        SELECT first_name || ' ' || last_name || ' ' || father_name 
+        INTO driver_name 
+        FROM auto_personal
+        WHERE id = top3_id;
+        record_routes_count := top3_count;
+        bonus_amount := total_bonus_amount * 0.2;
+        RETURN NEXT;
+    END IF;
+END;$$;
+
+
+ALTER FUNCTION public.calculate_bonuses(start_date date, end_date date, total_bonus_amount numeric) OWNER TO postgres;
 
 --
 -- Name: check_car_available(); Type: FUNCTION; Schema: public; Owner: postgres
@@ -399,6 +498,10 @@ COPY public.auto (id, num, color, mark, personal_id) FROM stdin;
 5	м912рв_78	зеленая	Opel	2
 3	р538нв_98	зеленая	BMW	3
 1	А749ПБ_178	желтая	fiat	5
+11	А132БВ_178	Красный	Газель	10
+12	У478АР_178	Синий	Форд	11
+13	С788ДД_198	Зеленый	Мерседес	12
+14	П601РС_777	Желтый	Газель	13
 \.
 
 
@@ -411,6 +514,10 @@ COPY public.auto_personal (id, first_name, last_name, father_name) FROM stdin;
 3	Полина	Пупина	Олеговна
 4	Анастасия	Плужник	Дмитриевна
 5	Иван	Губанов	Андреевич
+10	Иван	Петров	Сергеевич
+11	Мария	Сидорова	Ивановна
+12	Алексей	Иванов	Петрович
+13	Ольга	Кузнецова	Павловна
 \.
 
 
@@ -425,6 +532,17 @@ COPY public.journal (id, time_out, time_in, auto_id, route_id) FROM stdin;
 7	2025-09-25 11:20:53.76321	2025-09-25 11:21:12.85478	1	5
 5	2025-10-27 21:30:00	2025-10-29 06:30:00	2	5
 17	2025-10-30 15:40:00	\N	2	5
+29	2026-01-10 08:00:00	2026-01-10 08:30:00	11	8
+30	2026-01-11 09:00:00	2026-01-11 09:25:00	11	9
+31	2026-01-12 10:00:00	2026-01-12 10:20:00	11	10
+32	2026-01-10 14:00:00	2026-01-10 14:40:00	12	8
+33	2026-01-11 15:00:00	2026-01-11 15:35:00	12	9
+34	2026-01-13 16:00:00	2026-01-13 16:15:00	12	10
+35	2026-01-14 11:00:00	2026-01-14 11:45:00	13	8
+36	2026-01-15 12:00:00	2026-01-15 12:50:00	13	10
+37	2026-01-16 08:00:00	2026-01-16 08:55:00	12	8
+38	2026-01-17 09:00:00	2026-01-17 09:50:00	13	8
+39	2026-01-18 10:00:00	2026-01-18 10:35:00	14	8
 \.
 
 
@@ -437,6 +555,9 @@ COPY public.routes (id, name) FROM stdin;
 6	СПб-Москва
 7	Мурманск-СПб
 4	СПб-Петрозаводск
+8	Центр-Юг
+9	Север-Запад
+10	Восток-Запад
 \.
 
 
@@ -444,28 +565,28 @@ COPY public.routes (id, name) FROM stdin;
 -- Name: auto_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auto_id_seq', 6, true);
+SELECT pg_catalog.setval('public.auto_id_seq', 14, true);
 
 
 --
 -- Name: auto_personal_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.auto_personal_id_seq', 5, true);
+SELECT pg_catalog.setval('public.auto_personal_id_seq', 13, true);
 
 
 --
 -- Name: journal_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.journal_id_seq', 17, true);
+SELECT pg_catalog.setval('public.journal_id_seq', 39, true);
 
 
 --
 -- Name: routes_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public.routes_id_seq', 7, true);
+SELECT pg_catalog.setval('public.routes_id_seq', 10, true);
 
 
 --
@@ -549,5 +670,5 @@ ALTER TABLE ONLY public.journal
 -- PostgreSQL database dump complete
 --
 
-\unrestrict YFNEqIvjrruxdMTjFJQTzaGboeXhjJlfcKqy3Mggy7yPdc7Pls4vxFqQgNzeLcG
+\unrestrict CqxgDp7wecIN2IOmOsZg3ryWw0tOxS3ThJdxvOPU4MmZGkxCOeQJoB2YRkQRkGm
 
