@@ -2,14 +2,15 @@
 -- PostgreSQL database dump
 --
 
-\restrict CqxgDp7wecIN2IOmOsZg3ryWw0tOxS3ThJdxvOPU4MmZGkxCOeQJoB2YRkQRkGm
+\restrict uKBEZcmggr4GvjI6UCi42MmwBRvSfxVyMOu6W55JvAwT5LQ2Gr2XkjGxBhGJ6Rc
 
--- Dumped from database version 15.14 (Debian 15.14-0+deb12u1)
--- Dumped by pg_dump version 15.14 (Debian 15.14-0+deb12u1)
+-- Dumped from database version 17.6
+-- Dumped by pg_dump version 17.6
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
@@ -143,6 +144,27 @@ $$;
 ALTER FUNCTION public.check_car_available() OWNER TO postgres;
 
 --
+-- Name: check_last_record(); Type: FUNCTION; Schema: public; Owner: postgres
+--
+
+CREATE FUNCTION public.check_last_record() RETURNS trigger
+    LANGUAGE plpgsql
+    AS $$
+DECLARE
+	records_count INTEGER;
+BEGIN
+	SELECT COUNT(*) INTO records_count FROM journal;
+	IF records_count = 1 THEN
+		RAISE EXCEPTION 'Can not delete record: it is last';
+	END IF;
+	RETURN OLD;
+END;
+$$;
+
+
+ALTER FUNCTION public.check_last_record() OWNER TO postgres;
+
+--
 -- Name: compare_cars_time(integer, integer); Type: PROCEDURE; Schema: public; Owner: postgres
 --
 
@@ -199,8 +221,7 @@ ALTER PROCEDURE public.compare_cars_time(IN car1_id integer, IN car2_id integer)
 
 CREATE PROCEDURE public.get_route_record(IN route_name text, OUT min_time interval, OUT record_car_num text)
     LANGUAGE plpgsql
-    AS $$
-BEGIN
+    AS $$BEGIN
     SELECT 
         MIN(j.time_in - j.time_out),
         a.num
@@ -218,7 +239,6 @@ BEGIN
     ORDER BY MIN(j.time_in - j.time_out)
     LIMIT 1;
     
-    -- Если маршрут не найден или нет завершенных поездок
     IF min_time IS NULL THEN
         min_time := '0'::INTERVAL;
         record_car_num := 'Нет данных';
@@ -381,14 +401,14 @@ ALTER TABLE public.auto_personal ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTIT
 --
 
 CREATE VIEW public.drivers AS
- SELECT auto_personal.id,
-    auto_personal.first_name,
-    auto_personal.last_name,
-    auto_personal.father_name
+ SELECT id,
+    first_name,
+    last_name,
+    father_name
    FROM public.auto_personal;
 
 
-ALTER TABLE public.drivers OWNER TO postgres;
+ALTER VIEW public.drivers OWNER TO postgres;
 
 --
 -- Name: journal; Type: TABLE; Schema: public; Owner: postgres
@@ -420,20 +440,6 @@ ALTER TABLE public.journal ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
 
 
 --
--- Name: my_view; Type: VIEW; Schema: public; Owner: postgres
---
-
-CREATE VIEW public.my_view AS
- SELECT auto_personal.id,
-    auto_personal.first_name,
-    auto_personal.last_name,
-    auto_personal.father_name
-   FROM public.auto_personal;
-
-
-ALTER TABLE public.my_view OWNER TO postgres;
-
---
 -- Name: routes; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -458,7 +464,7 @@ CREATE VIEW public.on_route AS
   GROUP BY routes.id, routes.name;
 
 
-ALTER TABLE public.on_route OWNER TO postgres;
+ALTER VIEW public.on_route OWNER TO postgres;
 
 --
 -- Name: routes_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -473,20 +479,6 @@ ALTER TABLE public.routes ALTER COLUMN id ADD GENERATED ALWAYS AS IDENTITY (
     CACHE 1
 );
 
-
---
--- Name: routes_info; Type: VIEW; Schema: public; Owner: postgres
---
-
-CREATE VIEW public.routes_info AS
- SELECT routes.name,
-    count(journal.auto_id) AS count
-   FROM (public.routes
-     JOIN public.journal ON ((routes.id = journal.route_id)))
-  GROUP BY routes.name;
-
-
-ALTER TABLE public.routes_info OWNER TO postgres;
 
 --
 -- Data for Name: auto; Type: TABLE DATA; Schema: public; Owner: postgres
@@ -622,6 +614,13 @@ ALTER TABLE ONLY public.routes
 
 
 --
+-- Name: journal prevent_deleting_last_record_journal; Type: TRIGGER; Schema: public; Owner: postgres
+--
+
+CREATE TRIGGER prevent_deleting_last_record_journal BEFORE DELETE ON public.journal FOR EACH STATEMENT EXECUTE FUNCTION public.check_last_record();
+
+
+--
 -- Name: journal prevent_double_dispatch; Type: TRIGGER; Schema: public; Owner: postgres
 --
 
@@ -670,5 +669,5 @@ ALTER TABLE ONLY public.journal
 -- PostgreSQL database dump complete
 --
 
-\unrestrict CqxgDp7wecIN2IOmOsZg3ryWw0tOxS3ThJdxvOPU4MmZGkxCOeQJoB2YRkQRkGm
+\unrestrict uKBEZcmggr4GvjI6UCi42MmwBRvSfxVyMOu6W55JvAwT5LQ2Gr2XkjGxBhGJ6Rc
 
